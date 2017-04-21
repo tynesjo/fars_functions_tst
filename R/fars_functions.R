@@ -12,8 +12,8 @@
 #'
 #' @examples
 #' \dontrun{
-#'   Read a CSV file called "example.csv"
-#'   fars_read("example.csv")
+#'   #Read a CSV file called "example.csv"
+#'   #fars_read("example.csv")
 #' }
 #' @export
 
@@ -41,11 +41,11 @@ fars_read <- function(filename) {
 #'
 #' @examples
 #' \dontrun{
-#'   Create a file name for year 2017:
+#'   # Create a file name for year 2017:
 #'   make_filename(2017)
-#'   Create a file name for year 2017 passed as character:
+#'   # Create a file name for year 2017 passed as character:
 #'   make_filename("2017")
-#'   Note that the results of the two above function calls will be the same.
+#'   # Note that the results of the two above function calls will be the same.
 #' }
 #' @export
 
@@ -70,9 +70,9 @@ make_filename <- function(year) {
 #'
 #' @examples
 #' \dontrun{
-#'   Create data for the years 2016 and 2017 (equivalent calls):
-#'   fars_read_years(c(2016, 2017))
-#'   fars_read_years(list("2016", "2017"))
+#'   #Create data for the years 2016 and 2017 (equivalent calls):
+#'   #fars_read_years(c(2016, 2017))
+#'   #fars_read_years(list("2016", "2017"))
 #' }
 #' @export
 
@@ -107,9 +107,9 @@ fars_read_years <- function(years) {
 #'
 #' @examples
 #' \dontrun{
-#'   Create data for the years 2016 and 2017 (equivalent calls):
-#'   fars_read_years(c(2016, 2017))
-#'   fars_read_years(list("2016", "2017"))
+#'   #Create data for the years 2016 and 2017 (equivalent calls):
+#'   #fars_summarize_years(c(2016, 2017))
+#'   #fars_summarize_years(list("2016", "2017"))
 #' }
 #' @export
 
@@ -136,8 +136,8 @@ fars_summarize_years <- function(years) {
 #'
 #' @examples
 #' \dontrun{
-#'   Create an accident map for the state of Florida for 2014:
-#'   fars_map_state(state.num=12, year=2014)
+#'   #Create an accident map for the state of Florida for 2014:
+#'   #fars_map_state(state.num=12, year=2014)
 #' }
 #' @export
 
