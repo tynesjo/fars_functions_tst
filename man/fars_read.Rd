@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_read}
 \alias{fars_read}
-\title{Read a CSV data file as a data frame.}
+\title{Read a CSV data file as a data frame}
 \usage{
 fars_read(filename)
 }

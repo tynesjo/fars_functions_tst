@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_map_state}
 \alias{fars_map_state}
-\title{Create a map for the location of accidents within a state for a given year.}
+\title{Create a map for the location of accidents within a state for a given year}
 \usage{
 fars_map_state(state.num, year)
 }
@@ -19,5 +19,5 @@ to construct.}
 NULL. Function has side effect of plotting a map.
 }
 \description{
-Create a map for the location of accidents within a state for a given year.
+Create a map for the location of accidents within a state for a given year
 }

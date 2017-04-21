@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_read_years}
 \alias{fars_read_years}
-\title{Read and combine data for multiple years.}
+\title{Read and combine data for multiple years}
 \usage{
 fars_read_years(years)
 }
@@ -19,5 +19,5 @@ This function depends on dplyr::select and dplyr::mutate.}
 (list) of data frames each entry having data for a specific year.
 }
 \description{
-Read and combine data for multiple years.
+Read and combine data for multiple years
 }

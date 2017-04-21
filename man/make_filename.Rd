@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{make_filename}
 \alias{make_filename}
-\title{Create a data file name for a given year.}
+\title{Create a data file name for a given year}
 \usage{
 make_filename(year)
 }
@@ -17,7 +17,7 @@ an integer year value (by `as.integer`).}
 (character) file name incorporating year.
 }
 \description{
-Create a data file name for a given year.
+Create a data file name for a given year
 }
 \examples{
 \dontrun{
