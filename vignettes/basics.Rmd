@@ -1,0 +1,41 @@
+---
+title: "Introduction to the farsfuns Package"
+author: "A. N. Other"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This is a test package to implement an R package building process based on devtools, Travis CI (continuous integration) and testthat unit testing.
+
+The package implements data analysis functions to be applied to accident statistics from "Factors Behind Traffic Fatalities on our Roads" data files.
+
+## Functions
+
+The package contains the following functions:
+
+1. fars\_read
+2. make\_filename
+3. fars\_read\_years 
+4. fars\_summarize\_years
+5. fars\_map\_state
+
+
+### fars\_read
+This reads a (possibly compressed) CSV data file and returns a data frame.
+This function should be used to load the FARS data files.
+
+### make\_filename
+This constructs a file name for a given year.
+
+### fars\_read\_years
+Reads and combines data for multiple years into a list of data frames.
+
+### fars\_summarize\_years
+Summarize data read for multiple years by number of accidents per month.
+
+### fars\_map\_state
+Creates a map for the location of accidents within a state for a given year.
