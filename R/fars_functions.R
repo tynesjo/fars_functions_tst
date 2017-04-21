@@ -11,9 +11,10 @@
 #' @return (data frame, tbl_df, tbl) data read from the file
 #'
 #' @examples
-#' Read a CSV file called "example.csv"
-#' fars_read("example.csv")
-#'
+#' \dontrun{
+#'   Read a CSV file called "example.csv"
+#'   fars_read("example.csv")
+#' }
 #' @export
 
 fars_read <- function(filename) {
@@ -39,12 +40,13 @@ fars_read <- function(filename) {
 #' @return (character) file name incorporating year.
 #'
 #' @examples
-#' Create a file name for year 2017:
-#' make_filename(2017)
-#' Create a file name for year 2017 passed as character:
-#' make_filename("2017")
-#' Note that the results of the two above function calls will be the same.
-#'
+#' \dontrun{
+#'   Create a file name for year 2017:
+#'   make_filename(2017)
+#'   Create a file name for year 2017 passed as character:
+#'   make_filename("2017")
+#'   Note that the results of the two above function calls will be the same.
+#' }
 #' @export
 
 make_filename <- function(year) {
@@ -67,10 +69,11 @@ make_filename <- function(year) {
 #' @return (list) of data frames each entry having data for a specific year.
 #'
 #' @examples
-#' Create data for the years 2016 and 2017 (equivalent calls):
-#' fars_read_years(c(2016, 2017))
-#' fars_read_years(list("2016", "2017"))
-#'
+#' \dontrun{
+#'   Create data for the years 2016 and 2017 (equivalent calls):
+#'   fars_read_years(c(2016, 2017))
+#'   fars_read_years(list("2016", "2017"))
+#' }
 #' @export
 
 fars_read_years <- function(years) {
@@ -103,10 +106,11 @@ fars_read_years <- function(years) {
 #' @return (data frame, tbl_df, tbl) a data frame containing the accident count of every year selected (one column per year) computed by month (one row per month)
 #'
 #' @examples
-#' Create data for the years 2016 and 2017 (equivalent calls):
-#' fars_read_years(c(2016, 2017))
-#' fars_read_years(list("2016", "2017"))
-#'
+#' \dontrun{
+#'   Create data for the years 2016 and 2017 (equivalent calls):
+#'   fars_read_years(c(2016, 2017))
+#'   fars_read_years(list("2016", "2017"))
+#' }
 #' @export
 
 fars_summarize_years <- function(years) {
@@ -131,9 +135,10 @@ fars_summarize_years <- function(years) {
 #' @return NULL. Function has side effect of plotting a map.
 #'
 #' @examples
-#' Create an accident map for the state of Florida for 2014:
-#' fars_map_state(state.num=12, year=2014)
-#'
+#' \dontrun{
+#'   Create an accident map for the state of Florida for 2014:
+#'   fars_map_state(state.num=12, year=2014)
+#' }
 #' @export
 
 fars_map_state <- function(state.num, year) {
