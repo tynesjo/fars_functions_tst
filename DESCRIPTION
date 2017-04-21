@@ -1,14 +1,16 @@
 Package: farsfun
-Title: What the Package Does (one line, title case)
+Title: Data Processing and Analysis of FARS Data.
 Version: 0.0.0.9000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.3.3),
+Description: Data Processing and Analysis of FARS Data.
+Depends: R (>= 3.3.3)
+Imports:
+  magrittr,
   plyr,
   dplyr,
   tidyr,
   readr
-License: What license is it under?
+License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
