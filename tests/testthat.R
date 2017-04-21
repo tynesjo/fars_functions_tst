@@ -3,5 +3,5 @@
 # NOTE: all unit tests can be found under the /testthat subfolder.
 
 library(testthat)
-load_all("pkg")
-test_package("pkg")
+devtools::load_all("pkg")
+testthat::test_package("pkg")
