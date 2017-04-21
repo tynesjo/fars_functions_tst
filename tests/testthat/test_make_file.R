@@ -11,6 +11,6 @@ context("File Loading")
 "make_filename" %>%
 test_that({
   result <- farsfun::make_filename(2017)
-  expect_is(result, "character")
-  expect_true(length(result) == 1)
+  testthat::expect_is(result, "character")
+  testthat::expect_true(length(result) == 1)
 })

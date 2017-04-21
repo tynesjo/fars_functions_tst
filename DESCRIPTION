@@ -9,6 +9,7 @@ Imports:
   plyr,
   dplyr,
   tidyr,
+  testthat,
   readr
 License: CC0
 Encoding: UTF-8
