@@ -6,6 +6,7 @@ Description: Data Processing and Analysis of FARS Data.
 Depends: R (>= 3.3.3),
   magrittr
 Imports:
+  maps,
   devtools,
   plyr,
   dplyr,

@@ -1,6 +1,6 @@
 # Fars Functions ===============================================================
 
-#' Read a CSV data file as a data frame.
+#' Read a CSV data file as a data frame
 #'
 #' The filename must refer to an exsting filename containing comma-separated
 #' data.
@@ -24,7 +24,7 @@ fars_read <- function(filename) {
 
 # ------------------------------------------------------------------------------
 
-#' Create a data file name for a given year.
+#' Create a data file name for a given year
 #'
 #' @param year (integer or character) the year identifying the file whose name
 #'   to construct.
@@ -48,7 +48,7 @@ make_filename <- function(year) {
 
 # ------------------------------------------------------------------------------
 
-#' Read and combine data for multiple years.
+#' Read and combine data for multiple years
 #'
 #' @param years (integer or character) vector or list of the years for which to
 #' read data.
@@ -67,8 +67,8 @@ fars_read_years <- function(years) {
                 file <- make_filename(year)
                 tryCatch({
                         dat <- fars_read(file)
-                        dplyr::mutate(dat, year = year) %>% 
-                                dplyr::select(MONTH, year)
+                        dplyr::mutate_(dat, "year" = "year") %>% 
+                        dplyr::select_("MONTH", "year")
                 }, error = function(e) {
                         warning("invalid year: ", year)
                         return(NULL)
@@ -94,16 +94,17 @@ fars_read_years <- function(years) {
 #' @export
 
 fars_summarize_years <- function(years) {
-        dat_list <- fars_read_years(years)
-        dplyr::bind_rows(dat_list) %>% 
-                dplyr::group_by(year, MONTH) %>% 
-                dplyr::summarize(n = n()) %>%
-                tidyr::spread(year, n)
+  dat_list <- fars_read_years(years)
+
+  dplyr::bind_rows(dat_list) %>% 
+  dplyr::group_by_("year", "MONTH") %>% 
+  dplyr::summarize("n" = dplyr::n()) %>%
+  tidyr::spread_("year", "n")
 }
 
 # ------------------------------------------------------------------------------
 
-#' Create a map for the location of accidents within a state for a given year.
+#' Create a map for the location of accidents within a state for a given year
 #'
 #' @param year (integer or character) the year identifying the file whose name
 #'   to construct.
