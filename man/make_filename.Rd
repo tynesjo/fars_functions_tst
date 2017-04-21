@@ -20,10 +20,8 @@ an integer year value (by `as.integer`).}
 Create a data file name for a given year.
 }
 \examples{
-Create a file name for year 2017:
-make_filename(2017)
-Create a file name for year 2017 passed as character:
-make_filename("2017")
-Note that the results of the two above function calls will be the same.
-
+\dontrun{
+  make_filename(2017)
+  make_filename("2017")
+}
 }

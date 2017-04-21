@@ -17,8 +17,3 @@ The filename must refer to an exsting filename containing comma-separated
 data.
 This function depends on the readr::read_csv function.
 }
-\examples{
-Read a CSV file called "example.csv"
-fars_read("example.csv")
-
-}

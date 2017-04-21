@@ -21,8 +21,3 @@ NULL. Function has side effect of plotting a map.
 \description{
 Create a map for the location of accidents within a state for a given year.
 }
-\examples{
-Create an accident map for the state of Florida for 2014:
-fars_map_state(state.num=12, year=2014)
-
-}

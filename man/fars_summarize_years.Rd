@@ -22,9 +22,3 @@ bind_rows, group_by, and summarize. It also depends on tidyr::spread.}
 \description{
 Summarize data read for multiple years by number of accidents per month
 }
-\examples{
-Create data for the years 2016 and 2017 (equivalent calls):
-fars_read_years(c(2016, 2017))
-fars_read_years(list("2016", "2017"))
-
-}

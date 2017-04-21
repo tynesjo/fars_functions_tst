@@ -21,9 +21,3 @@ This function depends on dplyr::select and dplyr::mutate.}
 \description{
 Read and combine data for multiple years.
 }
-\examples{
-Create data for the years 2016 and 2017 (equivalent calls):
-fars_read_years(c(2016, 2017))
-fars_read_years(list("2016", "2017"))
-
-}
